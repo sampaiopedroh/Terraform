@@ -7,3 +7,6 @@
 *.tfstate.*
 
 *.pem
+.terraform.*
+*IaC-PROD*
+*IaC-DEV*

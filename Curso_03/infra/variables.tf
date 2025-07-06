@@ -7,3 +7,9 @@ variable "chave_ssh" {
 variable "instancia" {
     type = string
 }
+variable "nome_sg" {
+  type = string
+}
+variable "descricao_sg" {
+  type = string
+}
