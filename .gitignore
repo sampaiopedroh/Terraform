@@ -10,4 +10,5 @@
 .terraform.*
 *IaC-PROD*
 *IaC-DEV*
-**/*pycache*/**
+
+/__pycache__/
