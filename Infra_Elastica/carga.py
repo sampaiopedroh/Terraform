@@ -7,3 +7,4 @@ class WebsiteUser(FastHttpUser):
     @task
     def index(self):
         self.client.get("/")
+        
