@@ -25,16 +25,21 @@ resource "aws_iam_role_policy" "beanstalk_ec2_policy" {
     Statement = [
       {
         Action = [
-          "cloudwatch:*",
-          "ecr:GetAuthorizationToken",
-          "ecr:BatchGetImage",
-          "ecr:GetDownloadUrlForLayer",
-          "ds:*",
-          "ec2:*",
+          "cloudwatch:PutMetricData",
+          "ds:CreateComputer",
+          "ds:DescribeDirectories",
+          "ec2:DescribeInstanceStatus",
           "logs:*",
           "ssm:*",
           "ec2messages:*",
-          "ecr:*",
+          "ecr:GetAuthorizationToken",
+          "ecr:BatchCheckLayerAvailability",
+          "ecr:GetDownloadUrlForLayer",
+          "ecr:GetRepositoryPolicy",
+          "ecr:DescribeRepositories",
+          "ecr:ListImages",
+          "ecr:DescribeImages",
+          "ecr:BatchGetImage",
           "s3:*"
         ]
         Effect   = "Allow"
